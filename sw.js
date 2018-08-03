@@ -21,9 +21,9 @@ var cacheFiles = [
 	'./index.html',
 	'./restaurant.html',
 ];
-/*Instal service worker*/
-self.addEventListener('instal', function(event) {
-	event.waitUntil( casches.open(staticCache).then(function(cache) {
+/*Install service worker*/
+self.addEventListener('install', function(event) {
+	event.waitUntil( caches.open(staticCache).then(function(cache) {
 		return cache.addAll(cacheFiles);
 	})
 );

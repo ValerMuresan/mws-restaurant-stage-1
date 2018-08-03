@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   initMap(); // added
   fetchNeighborhoods();
   fetchCuisines();
-
+});
 
 /**
  * Fetch all neighborhoods and set their HTML.
@@ -212,6 +212,3 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     self.markers.push(marker);
   });
 } */
-/**
-*Add service worker.
-*/
